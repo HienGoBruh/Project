@@ -1,0 +1,40 @@
+{
+  "table": "tbl_khuyenmai",
+  "id_field": "id_km",
+  "upload_path": {},
+  "fields": {
+    "ma_khuyenmai": {
+      "label": "Mã khuyến mãi",
+      "type": "text",
+      "readonly": true
+    },
+    "loai": {
+      "label": "Loại giảm",
+      "type": "select",
+      "options": {
+        "gia": "Giảm tiền",
+        "percent": "Giảm phần trăm"
+      },
+      "required": true
+    },
+    "gia_tri": {
+      "label": "Giá trị giảm",
+      "type": "number",
+      "required": true
+    },
+    "ngay_bat_dau": {
+      "label": "Ngày bắt đầu",
+      "type": "datetime-local",
+      "required": true
+    },
+    "ngay_ket_thuc": {
+      "label": "Ngày kết thúc",
+      "type": "datetime-local",
+      "required": true
+    },
+    "mo_ta": {
+      "label": "Mô tả",
+      "type": "textarea"
+    }
+  }
+}

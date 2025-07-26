@@ -1,0 +1,37 @@
+{
+  "table": "tbl_tintuc",
+  "id_field": "id_tintuc",
+  "upload_path": {
+    "hinh_anh": "public/img/blog/"
+  },
+  "fields": {
+    "ma_tintuc": {
+      "label": "Mã tin",
+      "type": "text",
+      "readonly": true
+    },
+    "tieu_de": {
+      "label": "Tiêu đề",
+      "type": "text",
+      "required": true
+    },
+    "noi_dung": {
+      "label": "Nội dung",
+      "type": "textarea",
+      "required": true
+    },
+    "tac_gia": {
+      "label": "Tác giả",
+      "type": "text"
+    },
+    "ngay_xuatban": {
+      "label": "Ngày xuất bản",
+      "type": "datetime-local"
+    },
+    "hinh_anh": {
+      "label": "Ảnh",
+      "type": "image",
+      "path": "public/img/blog/"
+    }
+  }
+}

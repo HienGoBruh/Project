@@ -1,0 +1,33 @@
+{
+  "table": "tbl_binhluan_banh",
+  "id_field": "id_bl",
+  "fields": {
+    "ma_binhluan": {
+      "label": "Mã bình luận",
+      "type": "text",
+      "readonly": true
+    },
+    "id_nguoidung": {
+      "label": "Người dùng",
+      "type": "select",
+      "table": "tbl_nguoidung",
+      "value": "id_nguoidung",
+      "label_field": "ten_dang_nhap"
+    },
+    "id_banh": {
+      "label": "Bánh",
+      "type": "select",
+      "table": "tbl_banh",
+      "value": "id_banh",
+      "label_field": "ten_banh"
+    },
+    "noi_dung": {
+      "label": "Nội dung",
+      "type": "textarea"
+    },
+    "xephang": {
+      "label": "Xếp hạng",
+      "type": "number"
+    }
+  }
+}

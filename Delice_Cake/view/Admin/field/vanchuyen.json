@@ -1,0 +1,21 @@
+{
+  "table": "tbl_vanchuyen",
+  "id_field": "id_vanchuyen",
+  "fields": {
+    "ma_vanchuyen": {
+      "label": "Mã vận chuyển",
+      "type": "text",
+      "readonly": true
+    },
+    "ten_dvvc": {
+      "label": "Tên đơn vị",
+      "type": "text",
+      "required": true
+    },
+    "phi_vc": {
+      "label": "Phí vận chuyển",
+      "type": "number",
+      "required": true
+    }
+  }
+}

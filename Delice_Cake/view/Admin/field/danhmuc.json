@@ -1,0 +1,24 @@
+{
+    "table": "tbl_danhmuc_banh",
+    "id_field": "id_danhmuc",
+    "upload_path": {
+        "hinh_anh": "public/img/product/sale-product/"
+    },
+    "fields": {
+        "ma_danhmuc": {
+            "label": "Mã danh mục",
+            "type": "text",
+            "readonly": true
+        },
+        "ten_danhmuc": {
+            "label": "Tên danh mục",
+            "type": "text",
+            "required": true
+        },
+        "hinh_anh": {
+            "label": "Hình ảnh",
+            "type": "image",
+            "path": "public/img/product/sale-product/"
+        }
+    }
+}

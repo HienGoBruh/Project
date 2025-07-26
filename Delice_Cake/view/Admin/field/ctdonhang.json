@@ -1,0 +1,28 @@
+{
+  "table": "tbl_ctdonhang",
+  "id_field": "id_ctdh",
+  "fields": {
+    "id_donhang": {
+      "label": "Đơn hàng",
+      "type": "select",
+      "table": "tbl_donhang",
+      "value": "id_donhang",
+      "label_field": "ma_donhang"
+    },
+    "id_banh": {
+      "label": "Bánh",
+      "type": "select",
+      "table": "tbl_banh",
+      "value": "id_banh",
+      "label_field": "ten_banh"
+    },
+    "so_luong": {
+      "label": "Số lượng",
+      "type": "number"
+    },
+    "don_gia": {
+      "label": "Đơn giá",
+      "type": "number"
+    }
+  }
+}

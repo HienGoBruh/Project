@@ -1,0 +1,16 @@
+{
+  "table": "tbl_loaitintuc",
+  "id_field": "id_loai",
+  "fields": {
+    "ma_loai": {
+      "label": "Mã loại",
+      "type": "text",
+      "readonly": true
+    },
+    "ten_loai": {
+      "label": "Tên loại",
+      "type": "text",
+      "required": true
+    }
+  }
+}

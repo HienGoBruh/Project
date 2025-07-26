@@ -1,0 +1,56 @@
+{
+  "table": "tbl_nguoidung",
+  "id_field": "id_nguoidung",
+  "upload_path": {
+    "anh": "public/paper-dashboard-master/assets/img/"
+  },
+  "fields": {
+    "ma_nguoidung": {
+      "label": "Mã người dùng",
+      "type": "text",
+      "readonly": true
+    },
+    "ten_dang_nhap": {
+      "label": "Tên đăng nhập",
+      "type": "text",
+      "required": true
+    },
+    "mat_khau": {
+      "label": "Mật khẩu",
+      "type": "password",
+      "required": true
+    },
+    "ho_ten": {
+      "label": "Họ tên",
+      "type": "text",
+      "required": true
+    },
+    "email": {
+      "label": "Email",
+      "type": "email",
+      "required": true
+    },
+    "so_dien_thoai": {
+      "label": "Số điện thoại",
+      "type": "text"
+    },
+    "dia_chi": {
+      "label": "Địa chỉ",
+      "type": "textarea"
+    },
+    "loai_nguoi_dung": {
+      "label": "Loại người dùng",
+      "type": "select",
+      "options": {
+        "khach": "Khách hàng",
+        "nhanvien": "Nhân viên",
+        "admin": "Admin"
+      }
+    },
+    "anh": {
+      "label": "Ảnh đại diện",
+      "type": "image",
+      "path": "public/paper-dashboard-master/assets/img/"
+    }
+  }
+}

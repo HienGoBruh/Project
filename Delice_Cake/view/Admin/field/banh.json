@@ -1,0 +1,44 @@
+{
+  "table": "tbl_banh",
+  "id_field": "id_banh",
+  "upload_path": {
+    "hinh_anh": "public/img/product/"
+  },
+  "fields": {
+    "ma_banh": {
+      "label": "Mã bánh",
+      "type": "text",
+      "readonly": true
+    },
+    "ten_banh": {
+      "label": "Tên bánh",
+      "type": "text",
+      "required": true
+    },
+    "gia": {
+      "label": "Giá bán",
+      "type": "number",
+      "required": true
+    },
+    "hinh_anh": {
+      "label": "Hình ảnh",
+      "type": "image",
+      "path": "public/img/product/"
+    },
+    "mo_ta": {
+      "label": "Mô tả",
+      "type": "textarea"
+    },
+    "thanhphan": {
+      "label": "Thành phần",
+      "type": "textarea"
+    },
+    "id_khuyenmai": {
+      "label": "Khuyến mãi áp dụng",
+      "type": "select",
+      "table": "tbl_khuyenmai",
+      "value": "id_km",
+      "label_field": "loai"
+    }
+  }
+}

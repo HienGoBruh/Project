@@ -1,0 +1,43 @@
+{
+  "table": "tbl_donhang",
+  "id_field": "id_donhang",
+  "fields": {
+    "ma_donhang": {
+      "label": "Mã đơn hàng",
+      "type": "text",
+      "readonly": true
+    },
+    "id_nguoidung": {
+      "label": "Người đặt hàng",
+      "type": "select",
+      "table": "tbl_nguoidung",
+      "value": "id_nguoidung",
+      "label_field": "ten_dang_nhap"
+    },
+    "ngay_dat": {
+      "label": "Ngày đặt",
+      "type": "datetime-local"
+    },
+    "tong_tien": {
+      "label": "Tổng tiền",
+      "type": "number"
+    },
+    "trang_thai": {
+      "label": "Trạng thái",
+      "type": "select",
+      "options": {
+        "cho": "Chờ xử lý",
+        "dang_giao": "Đang giao",
+        "hoan_tat": "Hoàn tất",
+        "huy": "Đã hủy"
+      }
+    },
+    "id_khuyenmai": {
+      "label": "Khuyến mãi",
+      "type": "select",
+      "table": "tbl_khuyenmai",
+      "value": "id_km",
+      "label_field": "ma_khuyenmai"
+    }
+  }
+}

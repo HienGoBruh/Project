@@ -1,0 +1,16 @@
+{
+  "table": "pttt",
+  "id_field": "MAPTTT",
+  "fields": {
+    "MAPTTT": {
+      "label": "Mã PTTT",
+      "type": "text",
+      "readonly": true
+    },
+    "TENPTTT": {
+      "label": "Tên PTTT",
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "table": "tbl_hoadon",
+  "id_field": "id_hoadon",
+  "fields": {
+    "id_donhang": {
+      "label": "Đơn hàng",
+      "type": "select",
+      "table": "tbl_donhang",
+      "value": "id_donhang",
+      "label_field": "ma_donhang"
+    },
+    "ngay_in": {
+      "label": "Ngày in",
+      "type": "datetime-local"
+    },
+    "tong_tien": {
+      "label": "Tổng tiền",
+      "type": "number"
+    },
+    "trang_thai": {
+      "label": "Trạng thái",
+      "type": "text"
+    }
+  }
+}

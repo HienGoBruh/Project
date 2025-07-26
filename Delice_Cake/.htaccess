@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule "index.html" "?controller=Home&action=index"
+RewriteRule "blog.html" "?controller=News&action=BlogView"
+RewriteRule "dangnhap.html" "?controller=Login&action=index"
+RewriteRule "dangky.html" "?controller=Signup&action=index"
+RewriteRule "product.html" "?controller=Product&action=index"
+RewriteRule "cart.html" "?controller=Cart&action=index"
+RewriteRule "checkout.html" "?controller=Checkout&action=index"
