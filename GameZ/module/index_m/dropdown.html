@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- File CSS của bạn -->
+  <link rel="stylesheet" href="css/dropmenu.css">
+  <title>dropdownmenu</title>
+</head>
+<body>
+  
+  <div class="container text-center d-flex justify-content-center">
+    <div class="navbarh2 bgc1">
+      <ul class="list-unstyled d-flex align-items-center mb-0">
+        
+        <!-- Menu Danh mục -->
+        <li class="nav-item dropdown ms-2 me-4">
+          <a class="nav-link f8 text-lowc dropdown-toggle" 
+             style="max-width: 125px; min-height: 40px;" 
+             href="#" 
+             role="button" 
+             data-bs-auto-close="outside" 
+             data-bs-toggle="dropdown" 
+             aria-expanded="false">
+            <span>Danh mục</span>
+          </a>
+          <div class="dropdown-menu p-3 responsive-widthdropmenu">
+            <div class="row">
+              <!-- Cột Thể loại -->
+              <div class="col mb-3 mb-lg-0">
+                <h6>Thể loại</h6>
+                <div class="d-flex justify-content-center">
+                  <ul class="list-unstyled me-3">
+                    <!-- Thay href="#" bằng hientheloai.php?cat=... -->
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Hành động">Hành động</a></li>
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Nhập vai">Nhập vai</a></li>
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Chiến thuật">Chiến thuật</a></li>
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Phiêu lưu">Phiêu lưu</a></li>
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Mô phỏng">Mô phỏng</a></li>
+                  </ul>
+                  <ul class="list-unstyled me-3">
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Bắn súng">Bắn súng</a></li>
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Thể thao">Thể thao</a></li>
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Câu cá">Câu cá</a></li>
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Âm nhạc">Âm nhạc</a></li>
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Theo lượt">Theo lượt</a></li>
+                  </ul>
+                  <ul class="list-unstyled">
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Giải đố">Giải đố</a></li>
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Cốt truyện">Cốt truyện</a></li>
+                    <li><a class="dropdown-item" href="hientheloai.php?cat=Bài & Cờ">Bài & Cờ</a></li>
+                    <!-- ... v.v. -->
+                  </ul>
+                </div>
+              </div>
+              <!-- Cột Chủ đề -->
+              <div class="col mb-3 mb-lg-0">
+                <h6>Chủ đề</h6>
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item" href="hientheloai.php?cat=Khoa học viễn tưởng">Khoa học viễn tưởng</a></li>
+                  <li><a class="dropdown-item" href="hientheloai.php?cat=Kinh dị">Kinh dị</a></li>
+                  <li><a class="dropdown-item" href="hientheloai.php?cat=Sinh tồn">Sinh tồn</a></li>
+                  <li><a class="dropdown-item" href="hientheloai.php?cat=Thế giới mở">Thế giới mở</a></li>
+                </ul>
+              </div>
+              <!-- Cột Mục đặc biệt -->
+              <div class="col mb-3 mb-lg-0">
+                <h6>Mục đặc biệt</h6>
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item" href="hientheloai.php?cat=Miễn phí">Miễn phí</a></li>
+                  <li><a class="dropdown-item" href="hientheloai.php?cat=Có tính phí">Có trả phí</a></li>
+                </ul>
+              </div>
+              <!-- Cột Hỗ trợ -->
+              <div class="col">
+                <h6>Hỗ trợ</h6>
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item" href="hientheloai.php?cat=Chơi đơn">Chơi đơn</a></li>
+                  <li><a class="dropdown-item" href="hientheloai.php?cat=Chơi nhiều người">Nhiều người chơi</a></li>
+                  <li><a class="dropdown-item" href="hientheloai.php?cat=Mạng cục bộ">Mạng cục bộ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Menu Khuyến mãi -->
+        <li class="nav-item dropdown me-4">
+          <a class="nav-link f8 text-lowc dropdown-toggle" 
+             style="min-height: 40px;" 
+             href="#" 
+             role="button" 
+             data-bs-auto-close="outside" 
+             data-bs-toggle="dropdown" 
+             aria-expanded="false">
+            <span>Khuyến mãi</span>
+          </a>
+          <div class="dropdown-menu p-3 responsive-widthdropmenu2">
+            <div class="row fit-content">
+              <div class="col noborder">
+                <h6>Thể loại</h6>
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item" href="hientheloai.php?cat=Sale tháng">KM trong tháng</a></li>
+                  <li><a class="dropdown-item" href="hientheloai.php?cat=KM Khủng">KM Khủng Trong Mùa</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Mục Đáng chú ý -->
+        <li class="nav-item me-2">
+          <a class="nav-link f8 text-lowc" 
+             style="max-width: 140px;" 
+             href="sanpham.php">
+            <span>Đáng chú ý</span>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Chỉ áp dụng hover cho dropdown khi màn hình >= 992px */
+@media (min-width: 992px) {
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        
+    }
+    .responsive-widthdropmenu {
+        
+        min-width: 850px !important;
+    }
+    .responsive-widthdropmenu .col {
+        position: relative;
+        padding-left: 0;
+        border-right: 1px solid #ddd; 
+    }
+    .responsive-widthdropmenu .col:first-child {
+        border-left: none;
+        padding-left: 0 !important;
+    }
+    .responsive-widthdropmenu .col:last-child {
+        border-right: none;
+    }
+    .noborder {
+        border: none !important;
+    }
+}
+
+/* Bạn có thể dùng các lớp này nếu muốn tùy chỉnh border cho cột */
+.nobordery {
+    border-left: none !important;
+    border-right: none !important;
+}
+.noborderr {
+    border-right: none !important;
+}
+.noborderl {
+    border-left: none !important;
+}
+
+/* Đảm bảo mỗi cột có thể co giãn đủ cho nội dung */
+/* .responsive-widthdropmenu .col {
+    min-width: fit-content !important;
+} */
+
+/* Khuyến mãi dropdown có thể chỉ cần fit-content */
+/* .responsive-widthdropmenu2 {
+    min-width: fit-content !important;
+} */
+
+/* Nền và chiều rộng cho menu */
+.dropdown-menu {
+    background-color: #575860 !important;
+    width: fit-content !important;
+    
+}
+
+/* Màu chữ cho link */
+.dropdown-menu a {
+    color: white !important;
+}
+
+/* Tiêu đề mỗi cột */
+.dropdown-menu h6 {
+    color: rgb(102, 102, 255);
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+/* Text màu xám nhạt */
+.text-lowc {
+    color: rgb(226, 211, 211) !important;
+}
+
+/* Căn chỉnh navbar */
+.navbarh2 {
+    margin-top: 10px;
+    flex-wrap: nowrap !important; /* Ngăn menu con xuống dòng */
+    align-items: center;
+}
+.bgc1 {
+    background-color: rgb(66, 66, 175) !important;
+}
+
+/* Font-weight cho link f8 */
+a.f8 {
+    font-weight: 800;
+}
+.f8:hover {
+    color: white !important;
+}
+
+/* Tùy chỉnh item trong dropdown */
+.dropdown-item {
+    display: inline-block !important; 
+    width: auto;
+    padding: none !important;
+    padding-left: none !important;
+    white-space: nowrap !important; 
+    background-color: transparent !important;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Tăng độ dày của gạch chân */
+    text-underline-offset: 4px; /* Tạo khoảng cách giữa chữ và gạch chân */
+
+}
+
+/* Chỉ để demo, nếu bạn có thanh search */
+.search-bar {
+    height: fit-content;
+}
+
+/* Link hiển thị theo chiều ngang, giữa dọc */
+.nav-link {
+    display: flex !important;
+    align-items: center !important;
+}

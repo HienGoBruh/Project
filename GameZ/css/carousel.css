@@ -1,0 +1,61 @@
+.carousel-item {
+    color: #fff;
+    padding-bottom: 30px;
+  }
+  .big-image img {
+    width: 100%;
+    border-radius: 4px 0 0 4px;
+  }
+  .thumbnail-grid img {
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .thumbnail-grid .col {
+    padding: 5px;
+  }
+  .game-info {
+    margin-top: 15px;
+  }
+  .game-info p {
+    margin: 0;
+  }
+  .info-panel {
+    background: #0E1821;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* --- Thêm màu nền cho nút Next/Prev --- */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 80px !important;   /* Thu gọn bề ngang nút (nếu muốn) */
+    height: 80px !important;  /* Thu gọn chiều cao nút */
+    top: 50% !important;                /* Đặt vị trí nút ở 50% chiều cao carousel */
+    transform: translateY(-50%) !important; /* Dịch chuyển lên 1/2 chiều cao của chính nút */
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    /* Nền bán trong suốt màu đen, bo tròn để tạo hình nút */
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    height: 90px !important;
+  }
+  /* Đẩy nút Prev ra ngoài bên trái */
+  .carousel-control-prev {
+    left: -3rem !important;
+  }
+
+  /* Đẩy nút Next ra ngoài bên phải */
+  .carousel-control-next {
+    right: -3rem !important;
+  }
+  .carousel-indicators {
+    bottom: -1rem !important; /* hoặc 3rem tuỳ ý bạn */
+  }
+
+  /* Tăng kích thước chấm, bo tròn*/
+  .carousel-indicators button {
+    width: 20px !important;     
+    height: 8px !important;    
+    /* margin: 0 6px; */
+    
+  }
