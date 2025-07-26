@@ -1,0 +1,19 @@
+1. Vào Thư mục CSDL copy code sql csdl rồi mở SQL Server lên để import csdl vào
+
+2. Vào thư mục Sql Report để copy và qua SQL Server lên để import toàn bộ từng Proceduce vào
+
+3. Chuột phải vào file solution (file.sln) để mở file solution bằng Visual studio để chạy chương trình
+
+4. Vào HamXuLy.cs để sửa / thêm connection string để có thể chạy được:
+   B1. Vào SQL Server thì ngay lặp tức hộp thoại connect hiện ra, trước khi bấm connect thì copy Dòng Server name lại
+   B2. Vào Lại HamXuLy.cs thêm hoặc sửa lại đoạn connection string vào trong hàm connect:
+   conn.ConnectionString = @"Data Source=ĐIỀN_SERVER_NAME_VÀO_ĐÂY;Initial Catalog=QL_CUAHANG_THOITRANG;Integrated Security=True";
+   Ví dụ: ....Data Source=ASUS220\SQLEXPRESS;......
+
+5. Vào App.Config để thêm đoạn connection string mới để có thể chạy được Report:
+   B1. Copy dòng Connection string đã có sẵn rồi paste xuống dưới
+   (Đã có sẵn và đang được comment nên không cần copy, chỉ cần bỏ comment)
+   B2. Sửa lại dòng DIENVAODAY bằng tên server name lúc nãy đã copy bên SQL Server
+   Ví dụ: ....Data Source=ASUS220\SQLEXPRESS;......
+
+6. Bây giờ đã có thể sử dụng bình thường, nhấn start để bắt đầu sử dụng
