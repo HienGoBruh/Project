@@ -17,7 +17,7 @@
                         $_SESSION['id_nguoidung'] == $comment['id_nguoidung'] &&
                         $editId == $comment['id_bl']
                     ): ?>
-                        <form onsubmit="return updateComment(this, <?= $id_banh ?>)" class="mb-2">
+                        <form onsubmit="return updateComment1(this, <?= $id_banh ?>)" class="mb-2">
                             <input type="hidden" name="id_bl" value="<?= $comment['id_bl'] ?>">
 
                             <div class="form-group">
@@ -54,14 +54,14 @@
     <div class="s_comment_area">
         <h3 class="cm_title_br">Leave a Comment</h3>
         <div class="s_comment_inner">
-            <form class="row contact_us_form" id="commentForm" onsubmit="event.preventDefault(); addComment(<?= $id_banh ?>)" method="post">
+            <form class="row contact_us_form" id="commentForm" onsubmit="event.preventDefault(); addComment1(<?= $id_banh ?>)" method="post">
                 <input type="hidden" name="id_banh" value="<?= $id_banh ?>">
                 <div class="form-group col-md-6">
                     <input type="text" class="form-control" name="name" value="<?= htmlspecialchars($_SESSION['ten_dang_nhap']) ?>" readonly>
                 </div>
                 <div class="form-group col-md-6">
                     <select name="xephang" class="form-control" required>
-                        <option value="">Rate this cake</option>
+                        <option value="">Rate this Post</option>
                         <?php for ($i = 1; $i <= 5; $i++): ?>
                             <option value="<?= $i ?>"><?= $i ?> Star<?= $i > 1 ? 's' : '' ?></option>
                         <?php endfor; ?>

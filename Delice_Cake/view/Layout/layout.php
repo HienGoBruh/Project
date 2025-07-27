@@ -1,4 +1,4 @@
-<?php
+<?php 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -183,6 +183,64 @@ function addComment(id_banh) {
 function updateComment(form, id_banh) {
     const formData = new FormData(form);
     fetch(`<?= BASE_URL ?>?controller=CommentBanh&action=update`, {
+        method: "POST",
+        body: formData,
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+    .then(res => res.text())
+    .then(data => {
+        data = data.trim();
+        console.log('Response:', data); // Log để debug
+        if (data.includes("success")) {
+
+            alert("Đã cập nhật bình luận!");
+                        currentEditId = null; // ✅ Reset về null để không hiển thị form sửa
+            loadComments(id_banh); // Reload danh sách bình luận
+        } else {
+            alert("Lỗi khi cập nhật: " + data);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert("Lỗi kết nối: " + error);
+    });
+    return false; // Ngăn submit form
+}
+function addComment1(id_banh) {
+    const form = document.getElementById("commentForm");
+    const formData = new FormData(form);
+
+    fetch(`<?= BASE_URL ?>?controller=Comment&action=add`, {
+        method: "POST",
+        body: formData,
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+    .then(res => res.text())
+    .then(data => {
+        data = data.trim();
+                console.log('Response:', data); // Log để debug
+        if (data.includes("success")) {
+
+            alert("Đã bình luận thành công!");
+            form.reset();
+            loadComments(id_banh);
+        } else {
+            alert("Lỗi: " + data);
+        }
+    })
+    .catch(error => {
+         console.error('Error:', error);
+        alert("Lỗi kết nối: " + error);
+    });
+}
+
+function updateComment1(form, id_banh) {
+    const formData = new FormData(form);
+    fetch(`<?= BASE_URL ?>?controller=Comment&action=update`, {
         method: "POST",
         body: formData,
         headers: {

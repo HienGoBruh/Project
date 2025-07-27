@@ -408,7 +408,7 @@ if (isset($_SESSION['id_nguoidung'])) {
     let currentEditId = null;
 
 function loadComments(id_banh) {
-    let url = `index.php?controller=Product&action=ProductDetail&id=${id_banh}&ajax=1`;
+    let url = `index.php?controller=News&action=NewsDetail&id=${id_banh}&ajax=1`;
     if (currentEditId) url += `&edit=${currentEditId}`;
 
     fetch(url)
